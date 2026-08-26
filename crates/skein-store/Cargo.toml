@@ -1,0 +1,19 @@
+[package]
+name = "skein-store"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+
+[dependencies]
+skein-peer = { path = "../skein-peer" }
+tokio = { workspace = true }
+iroh = { workspace = true }
+iroh-blobs = { workspace = true }
+blake3 = { workspace = true }
+thiserror = { workspace = true }
+async-trait = { workspace = true }
+kvdb = { workspace = true }
+tempfile = { workspace = true }
+futures-util = { workspace = true }
+serde = { workspace = true }
+postcard = { workspace = true }

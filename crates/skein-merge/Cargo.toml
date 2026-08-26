@@ -1,0 +1,22 @@
+[package]
+name = "skein-merge"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+
+[dependencies]
+skein-store = { path = "../skein-store" }
+skein-edl = { path = "../skein-edl" }
+kvdb = { workspace = true }
+blake3 = { workspace = true }
+thiserror = { workspace = true }
+serde = { workspace = true }
+postcard = { workspace = true }
+iroh-blobs = { workspace = true }
+uuid = { workspace = true }
+
+[dev-dependencies]
+tempfile = { workspace = true }
+proptest = { workspace = true }
+skein-sync = { path = "../skein-sync" }
+skein-peer = { path = "../skein-peer" }

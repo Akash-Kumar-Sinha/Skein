@@ -1,0 +1,14 @@
+/target
+/skein_architecture
+/video
+/downloads
+/README.md
+/trash
+**.mp4
+skein_index.db
+skein_state.json
+Makefile
+report/
+.agents
+skein_downloads/
+**tests**

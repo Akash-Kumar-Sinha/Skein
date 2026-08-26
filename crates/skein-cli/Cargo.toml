@@ -1,0 +1,27 @@
+[package]
+name = "skein-cli"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+
+[dependencies]
+skein-peer = { path = "../skein-peer" }
+skein-store = { path = "../skein-store" }
+skein-edl = { path = "../skein-edl" }
+skein-merge = { path = "../skein-merge" }
+skein-sync = { path = "../skein-sync" }
+kvdb = { workspace = true }
+clap = { version = "4", features = ["derive"] }
+tokio = { workspace = true }
+iroh = { workspace = true }
+iroh-blobs = { workspace = true }
+thiserror = { workspace = true }
+uuid = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+hex = { workspace = true }
+
+[dev-dependencies]
+proptest = { workspace = true }
+tempfile = { workspace = true }
+rand = { workspace = true }

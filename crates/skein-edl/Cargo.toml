@@ -1,0 +1,10 @@
+[package]
+name = "skein-edl"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+
+[dependencies]
+iroh-blobs = { workspace = true }
+serde = { workspace = true }
+uuid = { workspace = true }

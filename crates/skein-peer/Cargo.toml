@@ -1,0 +1,16 @@
+[package]
+name = "skein-peer"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+
+[dependencies]
+tokio = { workspace = true }
+iroh = { workspace = true }
+iroh-blobs = { workspace = true }
+thiserror = { workspace = true }
+async-trait = { workspace = true }
+rand = { workspace = true }
+
+[dev-dependencies]
+tempfile = { workspace = true }

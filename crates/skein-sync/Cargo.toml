@@ -1,0 +1,25 @@
+[package]
+name = "skein-sync"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+
+[dependencies]
+skein-peer = { path = "../skein-peer" }
+skein-edl = { path = "../skein-edl" }
+skein-store = { path = "../skein-store" }
+skein-merge = { path = "../skein-merge" }
+iroh = { workspace = true }
+iroh-blobs = { workspace = true }
+tokio = { workspace = true }
+tokio-stream = { version = "0.1", features = ["sync"] }
+futures-util = { workspace = true }
+postcard = { workspace = true }
+thiserror = { workspace = true }
+serde = { workspace = true }
+async-trait = { workspace = true }
+blake3 = { workspace = true }
+uuid = { workspace = true }
+
+[dev-dependencies]
+tempfile = { workspace = true }

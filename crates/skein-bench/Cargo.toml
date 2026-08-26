@@ -1,0 +1,23 @@
+[package]
+name = "skein-bench"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+
+[dependencies]
+skein-peer = { path = "../skein-peer" }
+skein-store = { path = "../skein-store" }
+skein-edl = { path = "../skein-edl" }
+skein-merge = { path = "../skein-merge" }
+skein-sync = { path = "../skein-sync" }
+kvdb = { workspace = true }
+tokio = { workspace = true }
+iroh-blobs = { workspace = true }
+thiserror = { workspace = true }
+uuid = { workspace = true }
+tempfile = { workspace = true }
+criterion = { workspace = true }
+
+[[bench]]
+name = "sync_bench"
+harness = false
